@@ -1,12 +1,12 @@
 'use strict';
 
-var express = require('express');
-var route = express.Router();
-var bcrypt = require('bcrypt');
+const express = require('express');
+const route = express.Router();
+const bcrypt = require('bcrypt');
 
-var db = require('../knexfile.js')['development'];
+const db = require('../knexfile.js')['development'];
 
-var knex = require('knex')(db);
+const knex = require('knex')(db);
 
 route.post('/', (req,res,next) => {
   var hash = bcrypt.hashSync(req.body.password, 8);
