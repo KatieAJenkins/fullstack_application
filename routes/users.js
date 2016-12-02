@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var route = express.Router();
 var bcrypt = require('bcrypt');
@@ -73,6 +75,7 @@ route.use(function (req,res,next) {
     next();
   }
 });
+
 route.delete('/:username', function(req,res,next) {
   knex('users')
   .where({username: req.params.username})
