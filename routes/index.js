@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var route = express.Router();
 
@@ -22,7 +24,7 @@ route.post('/login', (req,res,next) => {
     if (!result || !bcrypt.compareSync(req.body.password,result.password_hash)) {
       res.sendStatus(401);
     } else {
-      req.session.userId = result.id
+      req.session.userId = result.id;
       res.redirect('/');
     }
   });

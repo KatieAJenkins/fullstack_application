@@ -1,3 +1,5 @@
+'use strict';
+
 var bcrypt = require('bcrypt');
 
 exports.seed = function(knex, Promise) {
