@@ -1,5 +1,5 @@
 {
-  "name": "g36_fullstackapp",
+  "name": "y",
   "version": "1.0.0",
   "description": "Full Stack App code along with g36.  Includes Auth!",
   "main": "server.js",
@@ -22,8 +22,12 @@
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "cookie-session": "^2.0.0-alpha.2",
-    "express": "^4.14.0",
+    "express": "^4.15.4",
     "knex": "^0.12.6",
     "pg": "^6.1.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
